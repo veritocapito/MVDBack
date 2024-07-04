@@ -21,7 +21,7 @@ import time
 
 
 app = Flask(__name__)
-CORS(app)  # Esto habilitará CORS para todas las rutas
+CORS(app, resources={r'/productos/*': {'origins': '*'}})  # Esto habilitará CORS para todas las rutas
 
 #--------------------------------------------------------------------
 class Catalogo:

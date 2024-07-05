@@ -75,7 +75,7 @@
                         //`<td><img src="./static/img/${producto.imagen_url}" alt="Imagen del producto" style="width: 100px;border-radius: 5px;"></td>` + '<td align="right">' + producto.temporada + '</td>';
                         
                         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-                        `<td><img src="https://www.pythonanywhere.com/user/veritocapito/files/home/veritocapito/mysite/static/img/${producto.imagen_url}" alt="Imagen del producto" style="width: 100px;"></td>` + '<td align="right">' + producto.temporada + '</td>';
+                        '<td><img src=https://www.pythonanywhere.com/user/veritocapito/files/home/veritocapito/mysite/static/img/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.temporada + '</td>';
                     
                     //Una vez que se crea la fila con el contenido del producto, se agrega a la tabla utilizando el método appendChild del elemento tablaProductos.
                     tablaProductos.appendChild(fila);

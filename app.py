@@ -21,7 +21,7 @@ import time
 
 
 app = Flask(__name__)
-CORS(app, resources={r'/productos/*': {'origins': '*'}})  # Esto habilitará CORS para todas las rutas
+CORS(app)  # Esto habilitará CORS para todas las rutas
 
 #--------------------------------------------------------------------
 class Catalogo:
@@ -127,7 +127,7 @@ catalogo = Catalogo(host='veritocapito.mysql.pythonanywhere-services.com', user=
 #RUTA_DESTINO = './static/img/'
 
 #Al subir al servidor, deberá utilizarse la siguiente ruta. veritocapito debe ser reemplazado por el nombre de veritocapito de Pythonanywhere
-RUTA_DESTINO = '/home/veritocapito/mysite/static/img/'
+RUTA_DESTINO = '/home/veritocapito/mysite/static/img'
 
 
 #--------------------------------------------------------------------
